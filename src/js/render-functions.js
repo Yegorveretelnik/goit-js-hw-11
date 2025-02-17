@@ -8,7 +8,7 @@ export function renderImages(images) {
     .map(
       (img) => `
         <a class="gallery-item" href="${img.largeImageURL}">
-          <img src="${img.webformatURL}" alt="${img.tags}" loading="lazy"/>
+          <img src="${img.webformatURL}" alt="${img.tags.split(',')[0]}" loading="lazy"/>
           <div class="info">
             <p>❤️ ${img.likes} Likes</p>
             <p>👁️ ${img.views} Views</p>
